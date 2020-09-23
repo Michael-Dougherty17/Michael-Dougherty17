@@ -1,3 +1,6 @@
+body{
+    background-color: rgb(141, 0, 184);
+}
 .flex-outer li,
 .flex-inner {
   display: flex;
