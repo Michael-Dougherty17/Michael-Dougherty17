@@ -5,30 +5,36 @@
   align-items: center;
 }
 
-.flex-outer{
-    list-style-type: none;
-    padding: 0px 16px;
-    max-width: 800px;
+.flex-outer {
+  list-style-type: none;
+  padding: 0px 16px;
+  max-width: 800px;
 }
- 
+
 .flex-outer > li > label,
 .flex-outer li p {
   flex: 1 0 125px;
   max-width: 225px;
+  padding: 8px;
 }
- 
+
 .flex-outer > li > label + *,
 .flex-inner {
   flex: 1 0 225px;
+  justify-content: space-between;
+}
+
+.flex-inner li {
+  width: 80px;
 }
 
 .flex-outer li button {
-    margin-left: 0px;
-    padding: 6px 12px;
-    border: none;
-    background: rgb(202, 25, 25);
-    color: #e2d51e;
-    text-transform: uppercase;
-    letter-spacing: 1.2px;
-    border-radius: 3px;
-  }
+  margin-left: 0px;
+  padding: 6px 12px;
+  border: none;
+  background: rgb(202, 25, 25);
+  color: #e2d51e;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  border-radius: 3px;
+}
