@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Michael Dougherty's Lab 4</title>
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Michael Dougherty's Lab 4</h1>
+    <form>
+      <ul class="flex-outer">
+        <li>
+          <label for="fname">First Name</label>
+          <input
+            name="fname"
+            type="text"
+            id="fname"
+            placeholder="Enter your first name here"
+            maxlength="140"
+          />
+        </li>
+        <li>
+          <label for="lname">Last Name</label>
+          <input
+            name="lname"
+            type="text"
+            id="lname"
+            placeholder="Enter your last name here"
+            maxlength="140"
+          />
+        </li>
+        <li>
+          <label for="email">Email</label>
+          <input
+            name="email"
+            type="email"
+            id="email"
+            placeholder="Enter your email here"
+          />
+        </li>
+        <li>
+          <label for="phone">Phone</label>
+          <input
+            name="phone"
+            type="tel"
+            id="phone"
+            placeholder="Enter your phone here"
+          />
+        </li>
+        <li>
+          <label for="message">Message</label>
+          <textarea
+            name="message"
+            rows="5"
+            cols="33"
+            id="message"
+            placeholder="Enter your message here"
+          ></textarea>
+        </li>
+        <li>
+          <p>Age</p>
+          <ul class="flex-inner">
+            <li>
+              <input
+                name="checkbox"
+                type="checkbox"
+                id="eighteen-to-thirtyfive"
+              />
+              <label for="eighteen-to-thirtyfive">18-35</label>
+            </li>
+            <li>
+              <input name="checkbox" type="checkbox" id="thirtyfive-to-fifty" />
+              <label name="checkbox" for="thirtyfive-to-fifty">35-50</label>
+            </li>
+            <li>
+              <input name="checkbox" type="checkbox" id="fifty-to-sixtyfive" />
+              <label for="fifty-to-sixtyfive">50-65</label>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <button name="button" type="submit" id="button">Submit</button>
+        </li>
+      </ul>
+    </form>
+  </body>
+</html>
