@@ -27,9 +27,12 @@ margin-right: auto;
 display: flex;
 flex-wrap: wrap;
 align-items: flex-start;
-justify-content: space-between;
+justify-content: center;
 }
 .image {
 margin-right:15px;
-flex:0 1 auto;
+flex: 1 0 auto;
+}
+div > img -p {
+
 }
