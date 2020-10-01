@@ -1,11 +1,23 @@
 header {
         text-align: center;
+        padding-bottom: 15px;
         background-color: dar rgb(168, 17, 17);
         color: white
-        
+}
+.header h1 {
+    left: 100px;
+    text-align: center;
+}
+.header img {
+    text-align: center;
+    right: 100px
 }
 a {
     text-align: center;
     position: absolute;
     left: 100px;
+}
+#overflow {
+overflow-wrap: break-word;
+
 }
