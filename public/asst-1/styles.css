@@ -7,11 +7,13 @@
   color: white;
   margin-bottom: 15px;
   align-items: center;
+  font-family: 'Sansita Swashed', cursive;
 }
 body {
   color:black;
   background-color: yellow;
   display: flex;
+  font-family: 'Sansita Swashed', cursive;
 }
 .about {
   max-width: 960px;
@@ -26,7 +28,6 @@ body {
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: center;
-  justify-content: space-between;
 }
 .image {
   margin-right: 15px;
