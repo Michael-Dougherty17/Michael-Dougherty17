@@ -1,5 +1,4 @@
 .header {
-<<<<<<< HEAD
     display: flex;
     justify-content: space-bewteen;
     padding:15px;
@@ -8,32 +7,18 @@
     color: white;
     margin-bottom:15px;
     align-items: center;
+    font-family: 'Sansita Swashed', cursive;
 }
 body {
-color: white;
-background-color: yellow;
-display: flex;
-=======
-        display: flex;
-        justify-content: space-bewteen;
-        padding:15px;
-        flex-wrap: wrap;
-        background-color: rgb(168, 17, 17);
-        color: white;
-        margin-bottom:15px;
-        align-items: center;
->>>>>>> 34cd6a181af0bc37cdf9e07c79566ca5f6496a37
-}
-body {
-    color: white;
+    color: black;
     background-color: yellow;
     display: flex;
+    font-family: 'Sansita Swashed', cursive;
 }   
 .about {
 max-width: 960px;
 }
 .content {
-<<<<<<< HEAD
 width:200px;
 margin-left: auto;
 margin-right: auto;
@@ -47,19 +32,4 @@ justify-content: space-between;
 .image {
 margin-right:15px;
 flex:0 1 auto;
-=======
-    width:200px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: space-between;
-}
-.image {
-    margin-right:15px;
-    flex:0 1 auto;
->>>>>>> 34cd6a181af0bc37cdf9e07c79566ca5f6496a37
 }
