@@ -29,6 +29,11 @@ body {
   align-items: flex-start;
   justify-content: center;
 }
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .image {
   margin-right: 15px;
   flex: 0 1 auto;
@@ -36,4 +41,16 @@ body {
 
 .image > image ~ p {
     border-radius: 4px;
+}
+@media screen and (max-width: 1000px;)
+.image p {
+    margin: 15px 0 0;
+}
+.image p {
+    background: yellow;
+    border-radius: 4px;
+    padding:15px; 
+    flex: 0 1 auto;
+    border: solid 1px;
+
 }
