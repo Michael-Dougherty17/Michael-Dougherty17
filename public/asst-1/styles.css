@@ -29,10 +29,18 @@ body {
   justify-content: space-between;
 }
 .image {
+<<<<<<< HEAD
   margin-right: 15px;
   flex: 0 1 auto;
 }
 
 .image > image ~ p {
     border-radius: 4px;
+=======
+margin-right:0px;
+flex: 0 1 auto;
+}
+div > img ~ p {
+
+>>>>>>> 5907ec03c38d277a57b1761f9abed26edcc21a55
 }
