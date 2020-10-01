@@ -3,17 +3,13 @@
         justify-content: space-bewteen;
         padding-bottom: 15px;
         flex-wrap: wrap;
-        background-color: dar rgb(168, 17, 17);
+        background-color: rgb(168, 17, 17);
         color: white;
 }
 body {
     color: white;
-    background-color: dar rgb(168, 17, 17);
+    background-color: rgb(168, 17, 17);
     display: flex;
-}
-a {
-    position: absolute;
-    left: 100px;
 }
 .about {
     max-width: 960px;
