@@ -1,10 +1,11 @@
 .header {
         display: flex;
         justify-content: space-bewteen;
-        padding-bottom: 15px;
+        padding:15px;
         flex-wrap: wrap;
         background-color: rgb(168, 17, 17);
         color: white;
+        margin-bottom:15px;
 }
 body {
     color: white;
@@ -15,7 +16,14 @@ body {
     max-width: 960px;
 }
 .content {
-    width: 200px;
+    width:200px;
     margin-left: auto;
     margin-right: auto;
   }
+.container {
+    display: flex;
+}
+.image {
+    margin-right:15px;
+    flex:1 0 auto;
+}
