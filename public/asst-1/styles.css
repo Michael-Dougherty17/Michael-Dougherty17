@@ -1,6 +1,7 @@
-header {
+.header {
         text-align: center;
         padding-bottom: 15px;
+        overflow-wrap: break-word;
         background-color: dar rgb(168, 17, 17);
         color: white
 }
@@ -17,7 +18,11 @@ a {
     position: absolute;
     left: 100px;
 }
-#overflow {
-overflow-wrap: break-word;
-
+.about {
+    max-width: 960px;
 }
+.content {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
