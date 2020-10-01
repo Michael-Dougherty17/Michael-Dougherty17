@@ -15,9 +15,6 @@ body {
   display: flex;
   font-family: 'Sansita Swashed', cursive;
 }
-.about {
-  max-width: 960px;
-}
 .content {
   width: 200px;
   margin-left: auto;
@@ -47,10 +44,18 @@ body {
     margin: 15px 0 0;
 }
 .image p {
-    background: yellow;
+    background: white;
     border-radius: 4px;
     padding:15px; 
     flex: 0 1 auto;
     border: solid 1px;
 
 }
+.about {
+    max-width: 960px;
+    background: white;
+    border-radius: 4px;
+    padding:15px; 
+    flex: 0 1 auto;
+    border: solid 1px;
+  }
