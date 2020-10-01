@@ -6,12 +6,13 @@
         background-color: rgb(168, 17, 17);
         color: white;
         margin-bottom:15px;
+        align-items: center;
 }
 body {
     color: white;
     background-color: yellow;
     display: flex;
-}
+}   
 .about {
     max-width: 960px;
 }
