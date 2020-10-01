@@ -1,7 +1,7 @@
 .header {
         text-align: center;
         padding-bottom: 15px;
-        overflow-wrap: break-word;
+        flex-wrap: wrap;
         background-color: dar rgb(168, 17, 17);
         color: white
 }
