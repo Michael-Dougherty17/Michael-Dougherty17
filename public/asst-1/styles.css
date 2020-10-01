@@ -1,17 +1,15 @@
 .header {
-        text-align: center;
+        display: flex;
+        justify-content: space-bewteen;
         padding-bottom: 15px;
         flex-wrap: wrap;
         background-color: dar rgb(168, 17, 17);
-        color: white
+        color: white;
 }
-.header h1 {
-    left: 100px;
-    text-align: center;
-}
-.header img {
-    text-align: center;
-    right: 100px
+body {
+    color: white;
+    background-color: dar rgb(168, 17, 17);
+    display: flex;
 }
 a {
     text-align: center;
