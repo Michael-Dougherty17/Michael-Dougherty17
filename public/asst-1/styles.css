@@ -3,7 +3,7 @@
   justify-content: space-between;
   padding: 15px;
   flex-wrap: wrap;
-  background-color: #A80303;
+  background-color: #A80309;
   color: white;
   margin-bottom: 15px;
   align-items: center;
@@ -11,15 +11,15 @@
 }
 body {
   color:black;
-  background-color: #F54E4E;
-  font-family: 'Secular One', sans-serif;
+  background-color: #F54E54;
+  font-family: 'Sansita Swashed', cursive;
 }
 h1, h2 {
-    font-family: 'Sansita Swashed', cursive;
+    font-family: 'Secular One', sans-serif;
 }
 .about {
   padding: 10px;
-  background:#F2CDCE;
+  background: #F2CDCE;
   border-radius: 4px;
   flex: 0 1 auto;
 }
