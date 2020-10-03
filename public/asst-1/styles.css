@@ -3,7 +3,7 @@
   justify-content: space-between;
   padding: 15px;
   flex-wrap: wrap;
-  background-color: rgb(168, 17, 17);
+  background-color: #A80303;
   color: white;
   margin-bottom: 15px;
   align-items: center;
@@ -11,15 +11,15 @@
 }
 body {
   color:black;
-  background-color: yellow;
-  font-family: 'Sansita Swashed', cursive;
+  background-color: #F54E4E;
+  font-family: 'Secular One', sans-serif;
 }
 h1, h2 {
-    font-family: 'Secular One', sans-serif;
+    font-family: 'Sansita Swashed', cursive;
 }
 .about {
   padding: 10px;
-  background: white;
+  background:#F39F9A;
   border-radius: 4px;
   flex: 0 1 auto;
 }
@@ -57,7 +57,7 @@ h1, h2 {
     margin: 0;
     flex-flow: row nowrap;
     align-items: center;
-    background:white;
+    background:#F39F9A;
     border-radius: 4px;
     padding: 15px;
     flex: 0 1 auto;
@@ -81,7 +81,7 @@ h1, h2 {
     margin-bottom: 15px;
 }
 .about {
-    background: white;
+    background: #F39F9A;
     border-radius: 4px;
     padding:15px; 
 
