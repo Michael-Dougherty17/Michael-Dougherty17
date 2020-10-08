@@ -91,11 +91,34 @@
             </li>
             <li>
               <button name="button" type="submit" id="button">Submit</button>
-              <button name="button2" type="button" id="button2">Activate</button>
+              <button onclick="demoFunction()" name="button2" type="button" id="button2">
+                Activate
+              </button>
             </li>
           </ul>
         </form>
       </div>
     </div>
+    <script>
+      function demoFunction(){
+        const elements = document.querySelectorAll('.flex-inner li label')
+        const fruitArray = ['Apple', 'Orange', 'Banana']
+        elements.forEach((el, i) => {
+          const text = el.innerText;
+          console.log(text);
+          el.innerText = fruitArray[i]
+        })
+      }
+
+      const myFunc =() => {}
+      
+      function testFunction() {
+        fetch("/api")
+          .then((response) => response.text())
+          .then((response) => {
+            console.log(response);
+          });
+      }
+    </script>
   </div>
 </html>
