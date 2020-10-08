@@ -9,7 +9,7 @@
   <div class="body">
     <div class="wrapper">
       <div class="container">
-        <h1>Michael Dougherty's Lab 4</h1>
+        <h1 class="lab_name">Michael Dougherty's Lab 4</h1>
         <form action="/api" method="post">
           <ul class="flex-outer">
             <li>
@@ -60,8 +60,8 @@
                 placeholder="Enter your message here"
               ></textarea>
             </li>
-            <li class="checkbox-list-label">
-              <p>Age</p>
+            <li>
+              <p  class="checkbox-list-label">Age</p>
               <ul class="flex-inner">
                 <li>
                   <input
@@ -91,7 +91,12 @@
             </li>
             <li>
               <button name="button" type="submit" id="button">Submit</button>
-              <button onclick="demoFunction()" name="button2" type="button" id="button2">
+              <button
+                onclick="demoFunction()"
+                name="button2"
+                type="button"
+                id="button2"
+              >
                 Activate
               </button>
             </li>
@@ -100,18 +105,31 @@
       </div>
     </div>
     <script>
-      function demoFunction(){
-        const elements = document.querySelectorAll('.flex-inner li label')
-        const fruitArray = ['Apple', 'Orange', 'Banana']
+      function demoFunction() {
+        //change background
+        const background = document.querySelector("body");
+        background.style.backgroundColor = "blue";
+
+        //change lab name
+        const lab_name = document.querySelector(".lab_name");
+        lab_name.innerHTML = "Lab 5 for Michael Dougherty";
+
+        //change age label to fruits
+        const checkbox_label = document.querySelector(".checkbox-list-label");
+        checkbox_label.innerHTML = "Fruits";
+
+        //Change buttons
+        const elements = document.querySelectorAll(".flex-inner li label");
+        const fruitArray = ["Apple", "Orange", "Banana"];
         elements.forEach((el, i) => {
           const text = el.innerText;
           console.log(text);
-          el.innerText = fruitArray[i]
-        })
+          el.innerText = fruitArray[i];
+        });
       }
 
-      const myFunc =() => {}
-      
+      const myFunc = () => {};
+
       function testFunction() {
         fetch("/api")
           .then((response) => response.text())
