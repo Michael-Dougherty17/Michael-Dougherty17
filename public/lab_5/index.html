@@ -61,7 +61,7 @@
               ></textarea>
             </li>
             <li>
-              <p  class="checkbox-list-label">Age</p>
+              <p class="checkbox-list-label">Age</p>
               <ul class="flex-inner">
                 <li>
                   <input
@@ -117,6 +117,10 @@
         //change age label to fruits
         const checkbox_label = document.querySelector(".checkbox-list-label");
         checkbox_label.innerHTML = "Fruits";
+
+        //center form
+        const center = document.querySelector(".flex-outer");
+        center.style.margin = "0 auto";
 
         //Change buttons
         const elements = document.querySelectorAll(".flex-inner li label");
