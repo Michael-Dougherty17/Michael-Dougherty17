@@ -1,7 +1,7 @@
-function getRandomIntInclusive(min, max) {
-  const mn = Math.ceil(min);
-  const mx = Math.floor(max);
-  return Math.floor(Math.random() * (mx - mn + 1) + mn);
+function randInt(min, max) {
+  mini = Math.ceil(min);
+  maxi = Math.floor(max);
+  return Math.floor(Math.random() * (maxi - mini + 1) + mini);
 }
 
 function range(int) {
@@ -12,7 +12,7 @@ function range(int) {
   return arr;
 }
 
-function sortByKey(org, compare, key) {
+function sort(a, b, key) {
   if (a[key] < b[key]) {
     return -1;
   } if (a[key] > b[key]) {
@@ -22,8 +22,8 @@ function sortByKey(org, compare, key) {
 }
 
 document.body.addEventListener('submit', async (e) => {
-  e.preventDefault(); // this stops whatever the browser wanted to do itself.
-  const form = $(e.target).serializeArray(); // here we're using jQuery to serialize the form
+  e.preventDefault(); 
+  const form = $(e.target).serializeArray(); 
   fetch('/api', {
     method: 'POST',
     headers: {
@@ -33,26 +33,26 @@ document.body.addEventListener('submit', async (e) => {
   })
     .then((fromServer) => fromServer.json())
     .then((fromServer) => {
+      console.log(fromServer)
       if (document.querySelector('.flex-inner')) {
         document.querySelector('.flex-inner').remove();
       }
-      document.createElement('.flex-inner');
-      const newArr = range(10);
-      const newArr2 = newArr.map(() => {
-        const number = getRandomIntInclusive(0, 243);
+      const array1 = range(10);
+      const array2 = array1.map(() => {
+        const number = randInt(0,243);
         return fromServer[number];
       });
 
-      const reverseList = newArr2.sort((org, compare) => sortByKey(org, compare, 'name'));
+      const reverseList = array2.sort((a, b) => sort(b, a, 'name'));
       const ul = document.createElement('ol');
-      ul.className = '.flex-inner';
+      ul.className = 'flex-inner';
       $('form').prepend(ul);
       reverseList.forEach((el, i) => {
         const li = document.createElement('li');
-        $(li).append(`<input type="checkbox" value=${el.code} id=${el.code} />`);
+        $(li).append(`<input type="checkbox" value= ${el.code} id=${el.code} />`);
         $(li).append(`<label for=${el.code}>${el.name} </label>`);
         $(ul).append(li);
-      })
+      });
 
       console.log('fromServer', fromServer);
     })
