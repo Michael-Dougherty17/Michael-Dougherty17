@@ -1,3 +1,5 @@
+/* eslint-disable linebreak-style */
+/* eslint-disable no-console */
 function randInt(min, max) {
   mini = Math.ceil(min);
   maxi = Math.floor(max);
@@ -33,7 +35,6 @@ document.body.addEventListener('submit', async (e) => {
   })
     .then((fromServer) => fromServer.json())
     .then((fromServer) => {
-      console.log(fromServer)
       if (document.querySelector('.flex-inner')) {
         document.querySelector('.flex-inner').remove();
       }
@@ -53,8 +54,6 @@ document.body.addEventListener('submit', async (e) => {
         $(li).append(`<label for=${el.code}>${el.name} </label>`);
         $(ul).append(li);
       });
-
-      console.log('fromServer', fromServer);
     })
     .catch((err) => console.log(err));
 });
