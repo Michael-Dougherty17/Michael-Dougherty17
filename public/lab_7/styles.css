@@ -1,0 +1,13 @@
+body {
+    background: lightskyblue;
+}
+
+.head {
+    color: darkblue;
+}
+
+.submitButton{
+    background: darkorange;
+    color: darkblue;
+}
+
