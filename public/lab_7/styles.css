@@ -13,7 +13,7 @@ body {
 }
 
 .header {
-  color: #fff;
+  color: rgb(255, 0, 0);
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -46,8 +46,8 @@ body {
 }
 
 .flex-outer button {
-  background-color: darkolivegreen;
-  color: white;
+  background-color: rgb(255, 255, 255);
+  color: rgb(255, 0, 0);
   padding: 6px 12px;
   border: none;
   text-transform: uppercase;
@@ -84,7 +84,7 @@ h1 {
   margin: 20px 50px;
   padding: 0 20px;
   min-height: 75px;
-  background-color: darkolivegreen;
+  background-color: rgb(255, 0, 0);
   color: white;
   display: flex;
   
@@ -98,7 +98,7 @@ h1 {
 }
 
 #chartContainer {
-    background: gray;
+    background: rgb(255, 0, 0);
     border: 2px dotted black;
     border-radius: 4px;
     height: 500px;
