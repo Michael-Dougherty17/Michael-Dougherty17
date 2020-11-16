@@ -17,7 +17,7 @@ function range(int) {
 function sort(a, b, key) {
   if (a[key] < b[key]) {
     return -1;
-  } if (a[key] > b[key]) {
+  } if (org[key] > comparison[key]) {
     return 1;
   }
   return 0;
@@ -55,5 +55,8 @@ document.body.addEventListener('submit', async (e) => {
         $(ul).append(li);
       });
     })
-    .catch((err) => console.log(err));
+    .catch((err) => {
+      console.log(err)
+      // set fave to no
+    });
 });
